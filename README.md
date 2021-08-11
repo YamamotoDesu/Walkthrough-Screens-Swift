@@ -67,7 +67,7 @@ class WalkthroughPageViewController: UIPageViewController {
 
 extension WalkthroughPageViewController: UIPageViewControllerDataSource {
     
-    // viewControllerBefore　is 
+    //  swipe right the image will bring you the next screen
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! WalkthroughContentViewController).index
         
@@ -76,6 +76,7 @@ extension WalkthroughPageViewController: UIPageViewControllerDataSource {
         return contentViewController(at: index)
     }
     
+    //  swipe left the image will bring you the next screen
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! WalkthroughContentViewController).index
         

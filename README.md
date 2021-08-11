@@ -115,7 +115,7 @@ class WalkthroughPageViewController: UIPageViewController {
                        "Find restaurants shared by your friends and other foodies"]
     var currentIndex = 0
     
-    // next button tapped
+    // next button tapped(ButtonTapped)
     func forwardPage() {
         currentIndex += 1
         if let nextViewController = contentViewController(at: currentIndex) {
@@ -126,7 +126,7 @@ class WalkthroughPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // assign the delegate of the  UIPageViewControllerDelegate  protocol
+        // assign the delegate of the  UIPageViewControllerDelegate  protocol(PageSwiped)
         delegate = self
         dataSource = self
         

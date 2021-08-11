@@ -49,6 +49,7 @@ https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Contr
 ```
 
 WalkthroughViewController
+https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Controller/WalkthroughViewController.swift
 ```swift
 class WalkthroughViewController: UIViewController {
     

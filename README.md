@@ -17,6 +17,7 @@ This is an easy introduction about how to use the UIPageViewController class.
 https://developer.apple.com/documentation/uikit/uipageviewcontroller
 
 ## Usage
+https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Storyboard/Onboarding.storyboard  
 <img src="https://user-images.githubusercontent.com/47273077/128966584-473c53bd-4e32-48b9-a976-e744f05a4780.png" height="400" width="800">
 
 

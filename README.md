@@ -7,7 +7,7 @@
   </tr>
   <tr>
     <td><img src="https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Gif/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-11%2009.38.47.gif" height="400" width="200"></td>
-    <td><img src="https://user-images.githubusercontent.com/47273077/127940326-0f0e568b-1777-4068-afa5-201df62a0fbb.png" height="400" width="200"></td>
+    <td><img src="https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Gif/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-11%2009.40.08.gif" height="400" width="200"></td>
   </tr>
 </table>
 

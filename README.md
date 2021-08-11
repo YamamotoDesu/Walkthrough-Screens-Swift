@@ -84,6 +84,7 @@ class WalkthroughViewController: UIViewController {
 
 }
 
+// update UI(PageSwiped)
 extension WalkthroughViewController: WalkthroughPageViewControllerDelegate
 {
     func didUpdatePageIndex(currentIndex: Int) {
@@ -97,7 +98,7 @@ WalkthroughPageViewController
 https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Controller/WalkthroughPageViewController.swift 
 ```swift
 
-// declare a didUpdatePageIndex method that tells its delegate the current page index
+// declare a didUpdatePageIndex method that tells its delegate the current page index(PageSwiped)
 protocol WalkthroughPageViewControllerDelegate: class {
     func didUpdatePageIndex(currentIndex: Int)
 }

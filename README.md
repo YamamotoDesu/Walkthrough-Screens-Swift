@@ -41,6 +41,7 @@ class WalkthroughPageViewController: UIPageViewController {
                        "Find restaurants shared by your friends and other foodies"]
     var currentIndex = 0
     
+    // next button tapped
     func forwardPage() {
         currentIndex += 1
         if let nextViewController = contentViewController(at: currentIndex) {

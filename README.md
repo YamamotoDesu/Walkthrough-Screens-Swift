@@ -12,7 +12,7 @@
 </table>
 
 ## Context  
-WalkthroughScreens are useful for displaying information. 
+WalkthroughScreens are useful for displaying information.   
 This is an easy introduction about how to use the UIPageViewController class.  
 https://developer.apple.com/documentation/uikit/uipageviewcontroller
 

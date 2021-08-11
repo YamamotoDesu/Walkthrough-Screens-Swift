@@ -2,7 +2,7 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
 <table border="0">
   <tr>
-    <th>pageSwiped</th>
+    <th>PageSwiped</th>
     <th>ButtonTapped</th>
   </tr>
   <tr>

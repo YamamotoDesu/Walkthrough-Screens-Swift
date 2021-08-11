@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B6BDB8E26C29A9200C09B8C /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6BDB8D26C29A9200C09B8C /* Onboarding.storyboard */; };
+		7B6BDB9126C2BB6A00C09B8C /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BDB9026C2BB6A00C09B8C /* WalkthroughContentViewController.swift */; };
+		7B6BDB9426C2C09C00C09B8C /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BDB9326C2C09C00C09B8C /* WalkthroughPageViewController.swift */; };
+		7B6BDB9726C2C71000C09B8C /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BDB9626C2C71000C09B8C /* WalkthroughViewController.swift */; };
+		7B6BDB9B26C3542400C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.40.08.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6BDB9A26C3542400C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.40.08.gif */; };
+		7B6BDB9E26C3543500C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.38.47.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6BDB9D26C3543500C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.38.47.gif */; };
 		F42A6C6F2543E05F009E2876 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F42A6C6D2543E05F009E2876 /* Nunito-Bold.ttf */; };
 		F42A6C702543E05F009E2876 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F42A6C6E2543E05F009E2876 /* Nunito-Regular.ttf */; };
 		F42A6C73254569E3009E2876 /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A6C72254569E3009E2876 /* RestaurantDetailHeaderView.swift */; };
@@ -34,6 +40,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B6BDB8D26C29A9200C09B8C /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		7B6BDB9026C2BB6A00C09B8C /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		7B6BDB9326C2C09C00C09B8C /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		7B6BDB9626C2C71000C09B8C /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		7B6BDB9A26C3542400C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.40.08.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-08-11 09.40.08.gif"; sourceTree = "<group>"; };
+		7B6BDB9D26C3543500C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.38.47.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-08-11 09.38.47.gif"; sourceTree = "<group>"; };
 		F42A6C6D2543E05F009E2876 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		F42A6C6E2543E05F009E2876 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		F42A6C72254569E3009E2876 /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
@@ -74,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B6BDB9926C3541400C09B8C /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				7B6BDB9A26C3542400C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.40.08.gif */,
+				7B6BDB9D26C3543500C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.38.47.gif */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
 		F42A6C452543DE08009E2876 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +148,7 @@
 		F48D55432536BAE700CE6DE4 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				7B6BDB9926C3541400C09B8C /* Gif */,
 				F42A6C7C25496D9A009E2876 /* Extensions */,
 				F42A6C452543DE08009E2876 /* Resources */,
 				F4D1A1D3253DF94F00CCD3FA /* Storyboard */,
@@ -151,6 +173,9 @@
 				F42A6C8F254BD4F0009E2876 /* MapViewController.swift */,
 				F48F8131254FC0860062C520 /* ReviewViewController.swift */,
 				F480451925512B7F00DDC281 /* NewRestaurantController.swift */,
+				7B6BDB9026C2BB6A00C09B8C /* WalkthroughContentViewController.swift */,
+				7B6BDB9326C2C09C00C09B8C /* WalkthroughPageViewController.swift */,
+				7B6BDB9626C2C71000C09B8C /* WalkthroughViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +207,7 @@
 			children = (
 				F48D554F2536BAE900CE6DE4 /* LaunchScreen.storyboard */,
 				F48D554A2536BAE700CE6DE4 /* Main.storyboard */,
+				7B6BDB8D26C29A9200C09B8C /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -246,8 +272,11 @@
 				F42A6C702543E05F009E2876 /* Nunito-Regular.ttf in Resources */,
 				F48D55512536BAE900CE6DE4 /* LaunchScreen.storyboard in Resources */,
 				F48D554E2536BAE900CE6DE4 /* Assets.xcassets in Resources */,
+				7B6BDB8E26C29A9200C09B8C /* Onboarding.storyboard in Resources */,
 				F42A6C6F2543E05F009E2876 /* Nunito-Bold.ttf in Resources */,
+				7B6BDB9B26C3542400C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.40.08.gif in Resources */,
 				F48D554C2536BAE700CE6DE4 /* Main.storyboard in Resources */,
+				7B6BDB9E26C3543500C09B8C /* RocketSim Recording - iPhone 12 - 2021-08-11 09.38.47.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +289,7 @@
 			files = (
 				F4D1A1CE253D8C5600CCD3FA /* Restaurant.swift in Sources */,
 				F42A6C822549DE6F009E2876 /* NavigationController.swift in Sources */,
+				7B6BDB9426C2C09C00C09B8C /* WalkthroughPageViewController.swift in Sources */,
 				F480451A25512B7F00DDC281 /* NewRestaurantController.swift in Sources */,
 				F48F8132254FC0860062C520 /* ReviewViewController.swift in Sources */,
 				F42A6C76254726D9009E2876 /* RestaurantDetailTextCell.swift in Sources */,
@@ -270,7 +300,9 @@
 				F48D55472536BAE700CE6DE4 /* SceneDelegate.swift in Sources */,
 				F42A6C8D254AC3D6009E2876 /* RestaurantDetailMapCell.swift in Sources */,
 				F4D1A1D6253EB90C00CCD3FA /* RestaurantDiffableDataSource.swift in Sources */,
+				7B6BDB9126C2BB6A00C09B8C /* WalkthroughContentViewController.swift in Sources */,
 				F4D1A1D92540370700CCD3FA /* RestaurantDetailViewController.swift in Sources */,
+				7B6BDB9726C2C71000C09B8C /* WalkthroughViewController.swift in Sources */,
 				F42A6C73254569E3009E2876 /* RestaurantDetailHeaderView.swift in Sources */,
 				F48D555B2536BFE000CE6DE4 /* RestaurantTableViewController.swift in Sources */,
 				F42A6C90254BD4F1009E2876 /* MapViewController.swift in Sources */,

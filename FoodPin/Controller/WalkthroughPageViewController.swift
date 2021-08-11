@@ -33,6 +33,10 @@ class WalkthroughPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if UserDefaults.standard.bool(forKey: "hasViewedWalkthrough") {
+            return
+        }
+        
         delegate = self
         dataSource = self
         

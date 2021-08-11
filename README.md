@@ -23,6 +23,8 @@ https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Story
 WalkthroughPageViewController  
 https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Controller/WalkthroughPageViewController.swift 
 ```swift
+
+// declare a didUpdatePageIndex method that tells its delegate the current page index
 protocol WalkthroughPageViewControllerDelegate: class {
     func didUpdatePageIndex(currentIndex: Int)
 }

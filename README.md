@@ -20,6 +20,79 @@ https://developer.apple.com/documentation/uikit/uipageviewcontroller
 https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Storyboard/Onboarding.storyboard  
 <img src="https://user-images.githubusercontent.com/47273077/128966584-473c53bd-4e32-48b9-a976-e744f05a4780.png" height="400" width="800">
 
+WalkthroughViewController  
+https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Controller/WalkthroughViewController.swift  
+```swift
+class WalkthroughViewController: UIViewController {
+    
+    @IBOutlet var pageControl: UIPageControl!
+    @IBOutlet var nextButton: UIButton! {
+        didSet {
+            nextButton.layer.cornerRadius = 25.0
+            nextButton.layer.masksToBounds = true
+        }
+    }
+    @IBOutlet var skipButton: UIButton!
+
+    @IBAction func skipButton(sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //  declare a  walkthroughDelegate  variable to hold the delegate
+    var walkthroughPageViewController: WalkthroughPageViewController?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func nextButtonTapped(sender: UIButton) {
+        if let index = walkthroughPageViewController?.currentIndex {
+            switch index {
+            case 0...1:
+                walkthroughPageViewController?.forwardPage()
+            case 2:
+                dismiss(animated: true, completion: nil)
+            default: break
+            }
+        }
+        updateUI()
+    }
+    
+    // controls the title of the next button and determines whether the skip button should be hidden
+    func updateUI() {
+        if let index = walkthroughPageViewController?.currentIndex {
+            switch index {
+            case 0...1:
+                nextButton.setTitle("NEXT", for: .normal)
+                skipButton.isHidden = false
+            case 2:
+                nextButton.setTitle("GET STARTED", for: .normal)
+                skipButton.isHidden = true
+            default: break
+            }
+            pageControl.currentPage = index
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination
+        if let pageViewController = destination as? WalkthroughPageViewController {
+            walkthroughPageViewController = pageViewController
+            walkthroughPageViewController?.walkthroughDelegate = self
+        }
+    }
+
+}
+
+extension WalkthroughViewController: WalkthroughPageViewControllerDelegate
+{
+    func didUpdatePageIndex(currentIndex: Int) {
+        updateUI()
+    }
+}
+
+```
+
 WalkthroughPageViewController  
 https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Controller/WalkthroughPageViewController.swift 
 ```swift
@@ -144,79 +217,6 @@ https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Contr
     var heading = ""
     var subHeading = ""
     var imageFile = ""
-```
-
-WalkthroughViewController  
-https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Controller/WalkthroughViewController.swift  
-```swift
-class WalkthroughViewController: UIViewController {
-    
-    @IBOutlet var pageControl: UIPageControl!
-    @IBOutlet var nextButton: UIButton! {
-        didSet {
-            nextButton.layer.cornerRadius = 25.0
-            nextButton.layer.masksToBounds = true
-        }
-    }
-    @IBOutlet var skipButton: UIButton!
-
-    @IBAction func skipButton(sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    //  declare a  walkthroughDelegate  variable to hold the delegate
-    var walkthroughPageViewController: WalkthroughPageViewController?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    @IBAction func nextButtonTapped(sender: UIButton) {
-        if let index = walkthroughPageViewController?.currentIndex {
-            switch index {
-            case 0...1:
-                walkthroughPageViewController?.forwardPage()
-            case 2:
-                dismiss(animated: true, completion: nil)
-            default: break
-            }
-        }
-        updateUI()
-    }
-    
-    // controls the title of the next button and determines whether the skip button should be hidden
-    func updateUI() {
-        if let index = walkthroughPageViewController?.currentIndex {
-            switch index {
-            case 0...1:
-                nextButton.setTitle("NEXT", for: .normal)
-                skipButton.isHidden = false
-            case 2:
-                nextButton.setTitle("GET STARTED", for: .normal)
-                skipButton.isHidden = true
-            default: break
-            }
-            pageControl.currentPage = index
-        }
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destination = segue.destination
-        if let pageViewController = destination as? WalkthroughPageViewController {
-            walkthroughPageViewController = pageViewController
-            walkthroughPageViewController?.walkthroughDelegate = self
-        }
-    }
-
-}
-
-extension WalkthroughViewController: WalkthroughPageViewControllerDelegate
-{
-    func didUpdatePageIndex(currentIndex: Int) {
-        updateUI()
-    }
-}
-
 ```
 
 

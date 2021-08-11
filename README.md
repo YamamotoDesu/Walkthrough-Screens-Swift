@@ -49,6 +49,7 @@ class WalkthroughPageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // assign the delegate of the  UIPageViewControllerDelegate  protocol
         delegate = self
         dataSource = self
         
@@ -64,6 +65,7 @@ class WalkthroughPageViewController: UIPageViewController {
 
 extension WalkthroughPageViewController: UIPageViewControllerDataSource {
     
+    // viewControllerBefore　is 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! WalkthroughContentViewController).index
         
@@ -98,6 +100,8 @@ extension WalkthroughPageViewController: UIPageViewControllerDataSource {
 }
 
 extension WalkthroughPageViewController: UIPageViewControllerDelegate {
+
+    // check if the transition is completed and find out the current page index
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if completed {
             if let contentViewController = pageViewController.viewControllers?.first as? WalkthroughContentViewController {
@@ -156,6 +160,7 @@ class WalkthroughViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //  declare a  walkthroughDelegate  variable to hold the delegate
     var walkthroughPageViewController: WalkthroughPageViewController?
     
     override func viewDidLoad() {

@@ -182,6 +182,7 @@ class WalkthroughViewController: UIViewController {
         updateUI()
     }
     
+    // controls the title of the next button and determines whether the skip button should be hidden
     func updateUI() {
         if let index = walkthroughPageViewController?.currentIndex {
             switch index {

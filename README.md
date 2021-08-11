@@ -20,8 +20,32 @@ https://developer.apple.com/documentation/uikit/uipageviewcontroller
 https://github.com/YamamotoDesu/WalkthroughScreens-Swift/blob/main/FoodPin/Storyboard/Onboarding.storyboard  
 <img src="https://user-images.githubusercontent.com/47273077/128966584-473c53bd-4e32-48b9-a976-e744f05a4780.png" height="400" width="800">
 
-WalkthroughContentViewController
+WalkthroughContentViewController  
+```swift
+    @IBOutlet var headingLabel: UILabel! {
+        didSet {
+            headingLabel.numberOfLines = 0
+        }
+    }
+    @IBOutlet var subHeadingLabel: UILabel! {
+        didSet {
+            subHeadingLabel.numberOfLines = 0
+        }
+    }
+    @IBOutlet var  contentImageView: UIImageView!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        headingLabel.text = heading
+        subHeadingLabel.text = subHeading
+        contentImageView.image = UIImage(named: imageFile)
+    }
+    
+    var index = 0
+    var heading = ""
+    var subHeading = ""
+    var imageFile = ""
+```
 
 
 
